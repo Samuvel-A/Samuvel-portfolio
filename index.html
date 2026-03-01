@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Samuvel A — AI Agent</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  :root{
+    --bg:#0a0a0f;
+    --bg2:#111118;
+    --card:#16161f;
+    --border:#222230;
+    --accent:#7c5cfc;
+    --accent2:#a78bfa;
+    --text:#e8e8f0;
+    --muted:#888899;
+  }
+  html{scroll-behavior:smooth;}
+  body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,sans-serif;line-height:1.6;}
+
+  /* NAV */
+  nav{position:fixed;top:0;width:100%;z-index:100;padding:1.2rem 2rem;display:flex;justify-content:space-between;align-items:center;backdrop-filter:blur(12px);background:rgba(10,10,15,0.85);border-bottom:1px solid var(--border);}
+  .logo{font-size:1.1rem;font-weight:700;letter-spacing:.05em;color:var(--text);}
+  .logo span{color:var(--accent);}
+  nav ul{list-style:none;display:flex;gap:2rem;}
+  nav a{color:var(--muted);text-decoration:none;font-size:.9rem;transition:color .2s;}
+  nav a:hover{color:var(--text);}
+
+  /* HERO */
+  #hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:6rem 2rem 4rem;position:relative;overflow:hidden;}
+  #hero::before{content:'';position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(124,92,252,.15) 0%,transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;}
+  .badge{display:inline-block;padding:.35rem 1rem;border:1px solid var(--border);border-radius:99px;font-size:.8rem;color:var(--muted);margin-bottom:1.5rem;letter-spacing:.08em;text-transform:uppercase;}
+  h1{font-size:clamp(2.5rem,6vw,5rem);font-weight:800;line-height:1.1;margin-bottom:1rem;letter-spacing:-.02em;}
+  h1 .name{background:linear-gradient(135deg,#fff 40%,var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+  h1 .role{display:block;font-size:clamp(1.2rem,3vw,2rem);font-weight:400;color:var(--muted);margin-top:.5rem;letter-spacing:.02em;-webkit-text-fill-color:var(--muted);}
+  .hero-desc{max-width:520px;color:var(--muted);font-size:1.05rem;margin-bottom:2.5rem;}
+  .btn{display:inline-block;padding:.85rem 2rem;background:var(--accent);color:#fff;border-radius:8px;text-decoration:none;font-weight:600;font-size:.95rem;transition:opacity .2s,transform .2s;}
+  .btn:hover{opacity:.88;transform:translateY(-1px);}
+  .btn-outline{background:transparent;border:1px solid var(--border);color:var(--text);margin-left:1rem;}
+  .btn-outline:hover{border-color:var(--accent);color:var(--accent);}
+
+  /* FEATURES */
+  #features{padding:6rem 2rem;max-width:1100px;margin:0 auto;}
+  .section-label{text-align:center;font-size:.8rem;letter-spacing:.15em;text-transform:uppercase;color:var(--accent);margin-bottom:.75rem;}
+  .section-title{text-align:center;font-size:clamp(1.6rem,3vw,2.5rem);font-weight:700;margin-bottom:.75rem;}
+  .section-sub{text-align:center;color:var(--muted);max-width:500px;margin:0 auto 3.5rem;}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem;}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:2rem;transition:border-color .2s,transform .2s;}
+  .card:hover{border-color:var(--accent);transform:translateY(-3px);}
+  .icon{width:48px;height:48px;border-radius:12px;background:rgba(124,92,252,.15);display:flex;align-items:center;justify-content:center;font-size:1.4rem;margin-bottom:1.25rem;}
+  .card h3{font-size:1.05rem;font-weight:600;margin-bottom:.5rem;}
+  .card p{color:var(--muted);font-size:.9rem;}
+
+  /* CONTACT */
+  #contact{padding:6rem 2rem;text-align:center;}
+  .cta-box{max-width:600px;margin:0 auto;background:var(--card);border:1px solid var(--border);border-radius:20px;padding:3.5rem 2rem;}
+  .cta-box h2{font-size:clamp(1.5rem,3vw,2.2rem);font-weight:700;margin-bottom:.75rem;}
+  .cta-box p{color:var(--muted);margin-bottom:2rem;}
+  .contact-links{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;}
+
+  /* FOOTER */
+  footer{padding:2rem;text-align:center;color:var(--muted);font-size:.85rem;border-top:1px solid var(--border);}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Samuvel<span>.</span></div>
+  <ul>
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="badge">AI Agent Developer</div>
+  <h1>
+    <span class="name">Samuvel A</span>
+    <span class="role">Building Intelligent AI Agents</span>
+  </h1>
+  <p class="hero-desc">I design and develop autonomous AI agents that think, reason, and act — turning complex workflows into seamless automated experiences.</p>
+  <div>
+    <a href="#features" class="btn">Explore My Work</a>
+    <a href="#contact" class="btn btn-outline">Get in Touch</a>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features">
+  <div class="section-label">What I Do</div>
+  <h2 class="section-title">AI Agent Expertise</h2>
+  <p class="section-sub">From concept to deployment — I build agents that deliver real-world results.</p>
+  <div class="cards">
+    <div class="card">
+      <div class="icon">🤖</div>
+      <h3>Autonomous AI Agents</h3>
+      <p>Design and deploy goal-driven agents capable of multi-step reasoning, planning, and decision-making.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🔗</div>
+      <h3>LLM Integration</h3>
+      <p>Seamlessly integrate large language models like GPT-4, Claude, and Gemini into your product or pipeline.</p>
+    </div>
+    <div class="card">
+      <div class="icon">⚙️</div>
+      <h3>Workflow Automation</h3>
+      <p>Replace repetitive manual processes with intelligent agents that operate 24/7 with precision.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🧠</div>
+      <h3>Agentic Pipelines</h3>
+      <p>Build multi-agent systems with memory, tool use, and real-time data retrieval for complex tasks.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="cta-box">
+    <div class="section-label">Let's Connect</div>
+    <h2>Ready to Build Something Smart?</h2>
+    <p>Have a project in mind or want to explore what AI agents can do for you? Let's talk.</p>
+    <div class="contact-links">
+      <a href="mailto:samuvel@example.com" class="btn">✉ Email Me</a>
+      <a href="#" class="btn btn-outline">LinkedIn</a>
+      <a href="#" class="btn btn-outline">GitHub</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Samuvel A · Built with purpose.
+</footer>
+
+</body>
+</html>
