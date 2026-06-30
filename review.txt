@@ -1,5 +1,7 @@
 q1 - 
 Resolved defects across two streams — client iTrack tickets and system-testing defects. I worked through a high volume of defects raised by the testing team, including iTrack tickets that carry a 24-hour client SLA as well as separate defects surfaced during system testing. This meant collaborating closely with the testers to diagnose and fix issues quickly and reliably.
+
+Stepped up on weekends to support OFS deployments and defect-solving. When the project needed it, I worked weekends to support deployments and to keep working through defects alongside the testing team, helping make sure releases went smoothly and issues didn't pile up.
 Q2 — Development commitments: key progress
 
 Grew as a lead developer. Took end-to-end ownership of the IPflex service midway through development on OFS, including design decisions on the rules engine and seeing it through to delivery.
