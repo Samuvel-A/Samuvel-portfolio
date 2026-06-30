@@ -11,3 +11,10 @@ Q3 — Aligning going forward: key priorities / focus areas
 Complete the Jenkins → GitHub Actions migration by the August 10 deadline. There's a significant number of repositories still to be converted, so my immediate focus is working through them and getting each one passing reliably.
 Finish and roll out my migration automation tool. I'm building a .md-based configuration guide that captures everything needed to set up a repo for the migration. My goal is to get it into the team's hands so the process becomes faster, repeatable, and less error-prone — turning a painful 15–20-iteration task into something far smoother.
 Deepen backend expertise and take on greater leadership and project ownership. In line with what the organization expects of me, I want to strengthen my backend and system-design depth while taking on more end-to-end ownership and leadership across projects.
+
+
+
+More regular, specific feedback. Short, frequent check-ins rather than waiting for formal review cycles would help me course-correct early and stay aligned on priorities as work evolves.
+A clearer picture of what the next level looks like. It would help me to understand concretely what more senior ownership involves and what specific gaps I need to close to get there — so I can be deliberate about growing into greater leadership and project ownership.
+More stretch opportunities. Pointing me toward projects where I can take on more end-to-end ownership or lead design decisions would give me the hands-on experience to build toward that next level.
+Pull everything together
